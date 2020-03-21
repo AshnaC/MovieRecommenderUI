@@ -43,13 +43,13 @@ function ExplorerLayout(props) {
                     <StyledFont name="film" />
                     Movies
                 </SubItem>
+                <MovieFinder
+                    searchList={searchList}
+                    searchMovies={searchMovies}
+                    getSimilarMovies={getSimilarMovies}
+                    setSelectedMovie={selectMovies}
+                />
             </Header>
-            <MovieFinder
-                searchList={searchList}
-                searchMovies={searchMovies}
-                getSimilarMovies={getSimilarMovies}
-                setSelectedMovie={selectMovies}
-            />
             {selectedMovie && <MovieView movie={selectedMovie} />}
             {error ? (
                 <ErrorBoundary>Something went wrong!</ErrorBoundary>

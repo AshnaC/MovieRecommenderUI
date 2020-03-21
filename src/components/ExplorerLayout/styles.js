@@ -5,6 +5,7 @@ export const Header = styled.div`
     width: 100%;
     line-height: 48px;
     background: #1f6bc0;
+    display: flex;
 `;
 
 export const SubItem = styled.div`
@@ -37,7 +38,7 @@ export const Loader = styled.div`
 `;
 
 export const Container = styled.div`
-    padding: 48px 40px 32px;
+    padding: 30px;
 `;
 
 export const ErrorBoundary = styled.div`

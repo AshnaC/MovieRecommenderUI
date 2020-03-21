@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const ExplorerWrapper = styled.div`
     position: relative;
     z-index: 3;
+    margin-left: auto;
+    margin-right: 20px;
 `;
 
 export const Search = styled.input`
-    width: 100%;
-    line-height: 48px;
+    width: 400px;
+    line-height: 40px;
     background: #fff;
     font-style: italic;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
@@ -15,18 +17,21 @@ export const Search = styled.input`
     padding: 0 50px;
     font-size: 12px;
     border: none;
+    border-radius: 5px;
+    color: grey;
 `;
 
 export const ResultWrapper = styled.div`
     position: absolute;
-    width: 80%;
-    top: 49px;
+    min-width: 40vw;
+    right: 0;
     background: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     max-height: calc(100vh - 130px);
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 2;
+    border-radius: 0 0 6px 6px;
 `;
 
 export const SearchItem = styled.div`

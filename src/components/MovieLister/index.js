@@ -4,7 +4,7 @@
  *
  */
 
-import React from "react";
+import React, { Fragment } from "react";
 import {
     Poster,
     MovieDetail,
@@ -13,6 +13,7 @@ import {
     MovieName,
     Description,
     MovieCard,
+    Heading,
     MovieListWrapper
 } from "./styles";
 
@@ -28,27 +29,30 @@ function MovieLister(props) {
     };
 
     return (
-        <MovieListWrapper>
-            {movies.map(item => (
-                <MovieCard key={item.movieIndex} onClick={onMovieClick(item)}>
-                    <Poster
-                        src={`https://image.tmdb.org/t/p/w500/${item.poster_path ||
-                            item.backdrop_path}`}
-                        onError={e => {
-                            e.target.src = noImage;
-                            e.target.onerror = "";
-                        }}
-                    />
-                    <MovieDetail>
-                        <Header>
-                            <MovieName>{item.title}</MovieName>
-                            <Rating>Rating:{item.vote_average || 0 * 10}%</Rating>
-                        </Header>
-                        <Description>{item.overview}</Description>
-                    </MovieDetail>
-                </MovieCard>
-            ))}
-        </MovieListWrapper>
+        <Fragment>
+            <Heading>Recommended Movies</Heading>
+            <MovieListWrapper>
+                {movies.map(item => (
+                    <MovieCard key={item.movieIndex} onClick={onMovieClick(item)}>
+                        <Poster
+                            src={`https://image.tmdb.org/t/p/w500/${item.poster_path ||
+                                item.backdrop_path}`}
+                            onError={e => {
+                                e.target.src = noImage;
+                                e.target.onerror = "";
+                            }}
+                        />
+                        <MovieDetail>
+                            <Header>
+                                <MovieName>{item.title}</MovieName>
+                                <Rating>Rating:{item.vote_average || 0 * 10}%</Rating>
+                            </Header>
+                            <Description>{item.overview}</Description>
+                        </MovieDetail>
+                    </MovieCard>
+                ))}
+            </MovieListWrapper>
+        </Fragment>
     );
 }
 

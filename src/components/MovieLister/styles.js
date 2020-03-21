@@ -17,14 +17,13 @@ export const MovieCard = styled.div`
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin: 15px;
     background: #fff;
     cursor: pointer;
 `;
 
 export const MovieListWrapper = styled.div`
     flex-wrap: wrap;
-    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     &:after {
@@ -59,4 +58,12 @@ export const Description = styled.div`
     height: 162px;
     padding: 16px;
     overflow: hidden;
+`;
+
+export const Heading = styled.div`
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 15px;
+    color: grey;
 `;
