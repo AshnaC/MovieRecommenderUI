@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const ExplorerWrapper = styled.div`
     position: relative;
     z-index: 3;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: 20px;
 `;
 
 export const Search = styled.input`
-    width: 400px;
+    width: 40vw;
     line-height: 40px;
     background: #fff;
     font-style: italic;
