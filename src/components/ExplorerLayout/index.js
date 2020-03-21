@@ -37,7 +37,7 @@ function ExplorerLayout(props) {
     }, [selectMovieData]);
 
     return (
-        <div>
+        <div style={{ fontSize: "12.8px" }}>
             <Header>
                 <SubItem>
                     <StyledFont name="film" />

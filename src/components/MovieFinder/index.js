@@ -7,7 +7,7 @@
 import React, { useState, useEffect, Fragment, useCallback } from "react";
 import throttle from "lodash/throttle";
 
-import { Search, ResultWrapper, SearchItem, ExplorerWrapper, Loader, Interstitial } from "./styles";
+import { Search, ResultWrapper, SearchItem, ExplorerWrapper, Interstitial } from "./styles";
 
 function MovieFinder(props) {
     const { searchMovies, searchList, getSimilarMovies, setSelectedMovie } = props;

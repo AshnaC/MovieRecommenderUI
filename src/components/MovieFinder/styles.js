@@ -7,19 +7,20 @@ export const ExplorerWrapper = styled.div`
 
 export const Search = styled.input`
     width: 100%;
-    line-height: 60px;
+    line-height: 48px;
     background: #fff;
     font-style: italic;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     padding: 0 50px;
-    font-size: 14px;
+    font-size: 12px;
+    border: none;
 `;
 
 export const ResultWrapper = styled.div`
     position: absolute;
     width: 80%;
-    top: 61px;
+    top: 49px;
     background: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     max-height: calc(100vh - 130px);
@@ -30,20 +31,12 @@ export const ResultWrapper = styled.div`
 
 export const SearchItem = styled.div`
     cursor: pointer;
-    line-height: 40px;
-    padding: 0 50px;
+    line-height: 32px;
+    padding: 0 40px;
     border-bottom: 1px solid #e4e4e4;
     &:hover {
-        // text-decoration: underline;
         background: #e3eefb;
     }
-`;
-
-export const Loader = styled.div`
-    float: right;
-    position: absolute;
-    top: 10px;
-    right: 20px;
 `;
 
 export const Interstitial = styled.div`

@@ -5,10 +5,8 @@ import MovieContainer from "../MovieContainer";
 
 export default function App() {
     return (
-        <div>
-            <Switch>
-                <Route exact path="*" component={MovieContainer} />
-            </Switch>
-        </div>
+        <Switch>
+            <Route exact path="*" component={MovieContainer} />
+        </Switch>
     );
 }

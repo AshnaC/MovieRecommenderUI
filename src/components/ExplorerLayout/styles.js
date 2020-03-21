@@ -3,16 +3,16 @@ import FontAwesome from "react-fontawesome";
 
 export const Header = styled.div`
     width: 100%;
-    line-height: 60px;
+    line-height: 48px;
     background: #1f6bc0;
 `;
 
 export const SubItem = styled.div`
-    width: 300px;
+    width: 240px;
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
     cursor: pointer;
 `;
@@ -37,16 +37,16 @@ export const Loader = styled.div`
 `;
 
 export const Container = styled.div`
-    padding: 60px 50px 40px;
+    padding: 48px 40px 32px;
 `;
 
 export const ErrorBoundary = styled.div`
-    padding: 60px 50px 40px;
+    padding: 48px 40px 32px;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     font-family: inherit;
     font-style: italic;

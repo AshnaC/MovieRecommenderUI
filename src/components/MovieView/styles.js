@@ -4,7 +4,7 @@ import FontAwesome from "react-fontawesome";
 export const Wrapper = styled.div`
     position: relative;
     width: 100%;
-    min-height: 650px;
+    min-height: 520px;
     display: flex;
     color: #fff;
 `;
@@ -53,62 +53,62 @@ export const Content = styled.div`
     z-index: 2;
     margin-left: auto;
     text-align: center;
-    padding: 20px 0;
+    padding: 16px 0;
 `;
 
 export const Title = styled.div`
-    font-size: 36px;
+    font-size: 29px;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 16px 0;
 `;
 
 export const OverView = styled.div`
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 22px;
+    font-size: 14px;
     width: 80%;
     margin: auto;
     letter-spacing: 0.3px;
 `;
 
 export const TagLine = styled.div`
-    font-size: 28px;
+    font-size: 23px;
     font-family: cursive;
     font-weight: bold;
-    padding: 15px 0 25px 0;
+    padding: 12px 0 20px 0;
 `;
 
 export const Genres = styled.div`
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
 `;
 
 export const GenreItem = styled.div`
     display: flex;
     justify-content: center;
-    font-size: 18px;
-    padding: 0 10px;
+    font-size: 14px;
+    padding: 0 8px;
 `;
 
 export const CastWrapper = styled.div`
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 8px;
     align-items: flex-end;
 `;
 
 export const Cast = styled.div`
-    padding: 20px;
+    padding: 16px;
 `;
 
 export const CastName = styled.div`
-    padding: 10px 0;
+    padding: 8px 0;
 `;
 
 export const Character = styled.div`
     letter-spacing: 1px;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 8px;
 `;
 
 export const Label = styled.span`
@@ -116,11 +116,11 @@ export const Label = styled.span`
 `;
 
 export const CastImage = styled.img`
-    height: 90px;
-    width: 90px;
-    border-radius: 5px;
+    height: 72px;
+    width: 72px;
+    border-radius: 4px;
     border: 1px solid;
-    padding: 2px;
+    padding: 1px;
 `;
 
 export const RatingWrapper = styled.div`
@@ -136,20 +136,20 @@ export const ProgressWrapper = styled.div`
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 16px;
 }
 `;
 
 export const ChartWrapper = styled.div`
-    width: 80px;
-    margin-left: 20px;
+    width: 64px;
+    margin-left: 16px;
 `;
 
 export const OverViewHeading = styled.div`
     letter-spacing: 2px;
-    font-size: 18px;
-    width: 90px;
+    font-size: 14px;
+    width: 72px;
     border-bottom: 1px solid;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 `;
